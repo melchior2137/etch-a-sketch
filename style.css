@@ -1,0 +1,154 @@
+html {
+    font-family: 'Gloria Hallelujah', cursive;
+    height: 100vh;
+    color: white;
+    background-color: silver;
+    outline: none;
+    
+}
+
+h1 {
+    font-size: 72px;
+    position: absolute;
+    top: 3.625rem;
+    height: 1em;
+    overflow: hidden;
+}
+
+p {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    font-size: 36px;
+    margin-top: -45rem;
+    margin-left:-2.9rem;
+}
+
+#color{
+    margin-top: -15rem;
+    margin-left:-2.65rem;
+    width: 3rem;
+    height: 3rem;
+
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+#grid {
+    display: grid;
+    width: 768px;
+    height: 512px;
+    grid-template-columns: repeat(48, 1fr);
+    grid-template-rows: repeat(32, 1fr);
+    border: 100px solid red;
+    border-radius: 10%;
+    box-shadow: -4px 4px 9px 0px rgba(0, 0, 0, 0.49);
+    -webkit-box-shadow: -4px 4px 9px 0px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: -4px 4px 9px 0px rgba(0, 0, 0, 0.49);
+}
+
+.grid-cell {
+    background-color: white;
+    transition: all 1s;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#menu {
+    display: flex;
+    width: 812px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -85px;
+}
+
+.menu-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 25px 1fr;
+    justify-items: center;
+    align-content: center;
+}
+
+.menu-wrapper h3 {
+    grid-column: span 4;
+    text-align: center;
+}
+
+button {
+    background: black;
+    color: white;
+    font-family: inherit;
+    font-size: 24px;
+    border: none;
+    width: 77px;
+    transition: all 1s;
+    border-radius: 5%;
+    box-shadow: -3px 5px 10px 0px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: -3px 5px 10px 0px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: -3px 5px 10px 0px rgba(0, 0, 0, 0.74);
+    cursor: pointer;
+}
+
+#clear-button {
+    width: 149px;
+    height: 57px;
+    background: white;
+    color: black;
+    font-size: 36px;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#medium-button {
+    width: 124px;
+    background: white;
+    color: black;
+}
+
+button:hover {
+    background: white;
+    color: black;
+}
+
+button:active {
+    transition: 0.1s;
+}
+
+#clear-button:hover {
+    background: black;
+    color: white;
+}
+#clear-button:active{
+    transform: translateY(2px);
+}
+
+#credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem;
+    font-size: 24px;
+}
+
+#credits>*+* {
+    margin-left: 5rem;
+}
+
+#author, #repo {
+    transition: all 0.5s;
+}
+
+#author:hover, #repo:hover {
+    color: black;
+    cursor: pointer;
+}
