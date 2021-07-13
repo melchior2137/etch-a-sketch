@@ -17,12 +17,22 @@ let gridCells = document.querySelectorAll(".grid-cell");
 
 gridCells.forEach( gridCell => gridCell.addEventListener('mouseover', draw));
 
+gridCells.forEach( gridCell => gridCell.addEventListener('click', draw2));
+
+
+function draw2(event){
+    event.target.style.background= getCurrentColor(selection);
+};
+
+
 function draw(event){
     if(event.buttons == 1 || event.buttons == 3){
     //event.target.classList.add("grid-cell-hovered");
     event.target.style.background= getCurrentColor(selection);
     }
 };
+
+
 
 
 function getCurrentColor(selection){
@@ -44,7 +54,6 @@ function clearGrid(){
     gridCells.forEach( gridCell => gridCell.style.background="white");
 };
 
-let root = document.documentElement;
 let chosenColor = document.querySelector("#chosenColor");
 chosenColor.addEventListener('change', setColor);
 
