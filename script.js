@@ -46,11 +46,11 @@ function clearGrid(){
 
 let root = document.documentElement;
 let chosenColor = document.querySelector("#chosenColor");
-chosenColor.addEventListener('change', setColor(event));
+chosenColor.addEventListener('change', setColor);
 
-function setColor(event){
+function setColor(){
 gridCells.forEach( gridCell => gridCell.classList.remove("grid-cell-hovered"));
-console.log(event);
+return chosenColor.value;
 };
 
 
