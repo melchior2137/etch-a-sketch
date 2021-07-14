@@ -111,9 +111,8 @@ button {
 
 #medium-button {
     width: 124px;
-    background: white;
-    color: black;
 }
+
 
 button:hover {
     background: white;

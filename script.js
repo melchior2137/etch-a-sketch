@@ -13,6 +13,19 @@ gridContainer.appendChild(gridCell);
 }
 
 
+//setting default selected buttons
+let defaultPixels = document.querySelectorAll('.pixels');
+defaultPixels[2].setAttribute('style', 'background-color:white; color:black;');
+
+let defaultTools = document.querySelectorAll('.tools');
+defaultTools[1].setAttribute('style', 'background-color:white; color:black;');
+
+
+
+
+
+
+
 let gridCells = document.querySelectorAll(".grid-cell");
 
 gridCells.forEach( gridCell => gridCell.addEventListener('mouseover', draw));
